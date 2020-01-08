@@ -1,11 +1,36 @@
-use ferris_says::say; // from the previous step
-use std::io::{stdout, BufWriter};
+// mod vars;
+// use vars::run;
+
+// mod numbers;
+// use numbers::run;
+
+// mod strings;
+// use strings::run;
+
+// mod tuples;
+// use tuples::run;
+
+// mod arrays;
+// use arrays::run;
+
+// mod vectors;
+// use vectors::run;
+
+// mod conditionals;
+// use conditionals::run;
+
+// mod functions;
+// use functions::run;
+
+// mod pointers;
+// use pointers::run;
+
+// mod structs;
+// use structs::run;
+
+mod enums;
+use enums::run;
 
 fn main() {
-    let stdout = stdout();
-    let out = b"Hello fellow Rustaceans!";
-    let width = 24;
-
-    let mut writer = BufWriter::new(stdout.lock());
-    say(out, width, &mut writer).unwrap();
+  run();
 }
